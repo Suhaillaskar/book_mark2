@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react'
 import { supabase } from '@/lib/supabase'
 import LoginButton from './login-button'
 
+export const dynamic = 'force-dynamic'
 export default function Home() {
   const [bookmarks, setBookmarks] = useState<any[]>([])
   const [title, setTitle] = useState('')
